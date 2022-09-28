@@ -1,6 +1,12 @@
 export GOPATH=/Users/$USER/go
 export PATH=$GOPATH/bin:$PATH
 
+# Extension version manager, needed for vundle
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# Set vi mode in terminal
+bindkey -v
+
 # Dotfiles config (see https://www.atlassian.com/git/tutorials/dotfiles)
 alias dotgit='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
@@ -18,6 +24,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-bindkey -v
