@@ -1,5 +1,7 @@
-export GOPATH=/Users/$USER/go
-export PATH=$GOPATH/bin:$PATH
+
+# Set Go env variables
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$(go env GOPATH)/bin
 
 # Extension version manager, needed for vundle
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
