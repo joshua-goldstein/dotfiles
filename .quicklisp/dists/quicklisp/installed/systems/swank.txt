@@ -1,0 +1,1 @@
+dists/quicklisp/software/slime-v2.27/swank.asd
